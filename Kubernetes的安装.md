@@ -12,7 +12,7 @@ $yum install -y etcd kubernetes
 ```
 
 遇到的错误：
-![](https://i.imgur.com/9QLjih9.jpg)
+![Kubernetes安装(1).jpg](img/Kubernetes安装/Kubernetes安装(1).jpg)
 
 ```
 error: rpmdb: BDB0113 Thread/process 16864/140542777837376 failed: BDB1507 Thread died in Berkeley DB library
@@ -38,3 +38,5 @@ $systemctl start kube-scheduler
 $systemctl start kubelet
 $systemctl start kube-proxy
 ```
+
+![Kubernetes安装(1).jpg](img/Kubernetes安装/Kubernetes安装(2).jpg)
