@@ -1,0 +1,31 @@
+apiVersion: v1
+#副本控制器
+kind: ReplicationController
+metadata:
+  #RC的名称，全局唯一
+  name: mysql
+spec:
+  #Pod副本期待数量
+  replicas: 1
+  selector:
+    #符合目标的Pod拥有此标签
+    app: mysql
+  #根据此模板创建Pod的副本(实例)
+  template:
+    metadata:
+      labels:
+        # Pod副本拥有的标签，对应RC的Selector
+        app: mysql
+    spec:
+      # Pod内容器的定义部分
+      containers:
+      #容器的部分
+      - name: mysql
+        #容器对应的Docker Image
+        image: mysql
+        ports:
+        #容器应用监听的端口号
+        - containerPort: 3306
+        env:
+        - name: MYSQL_ROOT_RASSWORD
+          value: "123456"
