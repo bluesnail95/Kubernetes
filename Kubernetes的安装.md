@@ -40,3 +40,15 @@ $systemctl start kube-proxy
 ```
 
 ![Kubernetes安装(1).jpg](img/Kubernetes安装/Kubernetes安装(2).jpg)
+
+
+参考资料：
+https://linux.cn/thread-14305-1-1.html
+
+https://blog.csdn.net/zjcjava/article/details/81877632
+
+https://blog.csdn.net/wiborgite/article/details/52858387
+
+https://blog.csdn.net/hxpjava1/article/details/79323236
+
+
